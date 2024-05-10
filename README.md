@@ -1,4 +1,4 @@
-# Acerca de fundacion logging app
+# Acerca de fundación logging app
 El proyecto se desarrollo con react para el frontend, python para el backend y como base de datos supabase.
 
 El proyecto contine un archivo dockerfile para la dokerizacion del front
