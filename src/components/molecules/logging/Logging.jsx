@@ -5,7 +5,6 @@ import axios from 'axios'
 export const Logging = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const [payload, setPayload] = useState('')
   const [logging, setLogging] = useState(false)
   const [formError, setFormError] = useState(false)
 
@@ -18,12 +17,7 @@ export const Logging = () => {
     }
     axios.post("http://127.0.0.1:8000" + '/user/logging', payload_api)
       .then(function (response) {
-        console.log(response.data.message.includes('Authenticated'))
         if (response.data.message.includes('Authenticated')) {
-          setPayload(prevState => ({
-            ...prevState,
-            'successMessage': 'Login successful. Redirecting to home page..'
-          }))
           console.log('logging success!')
           setFormError(false)
           setLogging(true)
@@ -41,11 +35,12 @@ export const Logging = () => {
   return (
     <div className='logging-container'>
       <h1>Bienvenido</h1>
+      <p>Por favor ingrese correo y contraseña</p>
       <form onSubmit={(event) => handleSubmit(event)} className='logging-input'>
         <input type="email"
           onChange={(e) => setEmail(e.target.value)}
           value={email} 
-          placeholder='Email'
+          placeholder='Correo'
           />
         <input type="password"
           value={password}
