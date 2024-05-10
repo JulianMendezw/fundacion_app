@@ -1,4 +1,4 @@
-# Getting Started with fundacion logging app
+# Acerca de fundacion logging app
 El proyecto se desarrollo con react para el frontend, python para el backend y como base de datos supabase.
 
 El proyecto contine un archivo dockerfile para la dokerizacion del front
@@ -38,8 +38,14 @@ fastapi dev app/main.py
 
 ### Ejemplos de la app
 
-Interfaz principal
+##Interfaz principal
+![explorer_XELB8GJgA7](https://github.com/JulianMendezw/fundacion_app/assets/7661539/9b951768-606a-4206-8dbf-d14f38ed30da)
 
-Mensaje de error
 
-Interfaz de acceso
+##Mensaje de error
+
+![chrome_5EM3tCvwzh](https://github.com/JulianMendezw/fundacion_app/assets/7661539/445d55a5-4112-4d25-964e-566b1d94a29c)
+
+
+##Interfaz de acceso
+![chrome_vhyrkUPAZ8](https://github.com/JulianMendezw/fundacion_app/assets/7661539/bdfa9ffe-444a-41cb-b788-590a1b9600b3)
